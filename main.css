@@ -28,6 +28,8 @@ body {
     color: #fff;
     cursor: pointer;
     display: inline-block;
+    text-decoration: none;
+    text-align: center;
 }
 
 .navBtn:hover {
@@ -35,7 +37,8 @@ body {
     color: black;
 }
 
-.mainBtn-container {
+
+/* .mainBtn-container {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -52,10 +55,9 @@ body {
     color: #fff;
     cursor: pointer;
     text-decoration: none;
-}
+} */
 
 .mainBtn:hover {
     background: fuchsia;
-    /* #ddd; */
     color: black;
 }
