@@ -19,45 +19,84 @@ body {
     padding: 20px;
 }
 
-.navBtn {
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li {
+    display: inline;
+    margin-right: 5px;
+}
+
+li.navBtn a {
+    display: inline-block;
     width: 250px;
-    font-size: 18px;
     padding: 10px;
+    font-size: 18px;
     border: none;
     background: #000;
     color: #fff;
     cursor: pointer;
-    display: inline-block;
     text-decoration: none;
     text-align: center;
 }
 
-.navBtn:hover {
+li.navBtn a:hover {
     background: #ddd;
     color: black;
 }
 
-
-/* .mainBtn-container {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.is-active {
+    background: fuchsia;
 }
 
-.mainBtn {
-    letter-spacing: 0.2em;
-    width: 300px;
-    font-size: 25px;
-    padding: 20px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-    text-decoration: none;
-} */
+li.mainBtn a {
+    padding: 7px;
+    border: 3px solid #ddd;
+}
 
-.mainBtn:hover {
+li.mainBtn a:hover {
     background: fuchsia;
-    color: black;
+    /* color: black; */
+}
+
+li.homeBtn a {
+    width: 50px;
+}
+
+.tabs-details {
+    background: rgba(0, 0, 0, 0.5);
+    color: #ddd;
+    position: fixed;
+    left: 50%;
+    top: 150px;
+    bottom: 0px;
+    transform: translate(-50%, 0%);
+    width: 700px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    /* For Firefox */
+    -ms-overflow-style: none;
+    /* For Internet Explorer and Edge */
+}
+
+.tabs-details::-webkit-scrollbar {
+    width: 0px;
+    /* For Chrome, Safari, and Opera */
+}
+
+.tabs-details p {
+    padding: 10px
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.25s ease-out;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
 }
