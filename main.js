@@ -1,3 +1,5 @@
+import artists from './json/artists.json'
+
 Vue.component('tabs', {
     template: `
         <div>
@@ -7,7 +9,9 @@ Vue.component('tabs', {
                     <a :href="tab.href" @click="selectTab(tab)">{{ tab.name }}</a>
                 </li>
                 <li class="navBtn mainBtn">
-                    <a target="_blank" href="https://hubs.mozilla.com/t7ZhGX6/the-trouble-with-double-vr">vr exhibition</a>
+                    <a target="_blank" href="https://hubs.mozilla.com/t7ZhGX6/the-trouble-with-double-vr">
+                        <span class="glitch-block" data-text="visit">vr exhibition</span>
+                    </a>
                 </li>
               </ul>
             </div>
@@ -59,5 +63,8 @@ Vue.component('tab', {
 });
 
 new Vue({
-    el: '#app'
+    el: '#app',
+    data: {
+        artists: artists
+    }
 });

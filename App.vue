@@ -1,18 +1,4 @@
-<html>
-  	<head>
-		<meta charset="UTF-8">
-		<title>the trouble with double</title>
-		<link rel="stylesheet" href="main.css">
-
-	</head>
-	<body>
-
-	<!-- The video -->
-	<video controls autoplay muted loop autobuffer playsinline id="myVideo">
-		<source src="thetroublewithdouble.mov" type="video/mp4">
-	</video>
-
-
+<template>
 	<div id="app">
 		<tabs>
 			<tab name="⁑" home="true">
@@ -44,8 +30,21 @@
 			</tab>
 		</tabs>
 	</div>
+</template>
 
-	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
-	<script src="main.js"></script>
-  </body>
-</html>
+<script>
+	export default {
+    name: 'app'
+  }
+</script>
+
+<style>
+	#app {
+		font-family: 'Avenir', Helvetica, Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		text-align: center;
+		color: #2c3e50;
+		margin-top: 60px;
+	}
+</style>

@@ -1,102 +1,180 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #myVideo {
-    position: fixed;
-    left: -50%;
-    top: 0%;
-    min-width: 100%;
-    min-height: 100%;
+  position: fixed;
+  left: -50%;
+  top: 0%;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 .nav {
-    position: fixed;
-    top: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
+  font-family: "Press Start 2P", cursive;
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
 }
 
 ul {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 ul li {
-    display: inline;
-    margin-right: 5px;
+  display: inline;
+  margin-right: 5px;
 }
 
 li.navBtn a {
-    display: inline-block;
-    width: 250px;
-    padding: 10px;
-    font-size: 18px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
+  height: 25px;
+  display: inline-block;
+  width: 250px;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
 }
 
 li.navBtn a:hover {
-    background: #ddd;
-    color: black;
+  background: #ddd;
+  color: black;
 }
 
 .is-active {
-    background: fuchsia;
+  background: fuchsia;
 }
 
 li.mainBtn a {
-    padding: 7px;
-    border: 3px solid #ddd;
+  padding: 7px;
+  border: 3px solid #ddd;
 }
 
 li.mainBtn a:hover {
-    background: fuchsia;
-    /* color: black; */
+  background: fuchsia;
+  /* color: black; */
 }
 
 li.homeBtn a {
-    width: 50px;
+  width: 50px;
 }
 
 .tabs-details {
-    background: rgba(0, 0, 0, 0.5);
-    color: #ddd;
-    position: fixed;
-    left: 50%;
-    top: 150px;
-    bottom: 0px;
-    transform: translate(-50%, 0%);
-    width: 700px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scrollbar-width: none;
-    /* For Firefox */
-    -ms-overflow-style: none;
-    /* For Internet Explorer and Edge */
+  text-align: justify;
+  padding-top: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ddd;
+  position: fixed;
+  left: 50%;
+  top: 150px;
+  bottom: 0px;
+  transform: translate(-50%, 0%);
+  width: 700px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */
 }
 
 .tabs-details::-webkit-scrollbar {
-    width: 0px;
-    /* For Chrome, Safari, and Opera */
+  width: 0px;
+  /* For Chrome, Safari, and Opera */
 }
 
 .tabs-details p {
-    padding: 10px
+  padding: 10px;
 }
 
 .fade-enter-active,
 .fade-leave-active {
-    transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s ease-out;
 }
 
 .fade-enter,
 .fade-leave-to {
-    opacity: 0;
+  opacity: 0;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+h2 {
+  font-family: "Press Start 2P", cursive;
+  display: block;
+  font-size: 1em;
+  margin: 1em;
+  font-weight: bold;
+}
+
+.glitch-block {
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch {
+  2%, 64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+  4%, 60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+.glitch-block:before,
+.glitch-block:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+}
+
+.glitch-block:before {
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop {
+  2%, 64% {
+    transform: translate(2px, -2px);
+  }
+  4%, 60% {
+    transform: translate(-2px, 2px);
+  }
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+.glitch-block:after {
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom {
+  2%, 64% {
+    transform: translate(-2px, 0);
+  }
+  4%, 60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(-22px, 5px) skew(21deg);
+  }
 }
