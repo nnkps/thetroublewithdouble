@@ -1,9 +1,11 @@
 <template>
-    <div class="section">
-        <h2>Bio</h2>
-        <p>
-            lorem ipsum
-        </p>
+    <div class="section-main-inside">
+        <div class="section">
+            <h2>Bio</h2>
+            <p>
+                lorem ipsum
+            </p>
+        </div>
     </div>
 </template>
 

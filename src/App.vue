@@ -3,39 +3,40 @@
     <div class="header">
       <nav class="navigation">
         <router-link class="home" to="/"></router-link>
+        <router-link to="/info">Info</router-link>
         <router-link v-for="exhibition in exhibitions" :key="exhibition.slug" :to="{name: 'exhibition', params: { slug: exhibition.slug }}">{{ exhibition.name }}</router-link>
         <router-link to="/bio">Bio</router-link>
       </nav>
     </div>
-    <div class="wrapper">
+    <div class="section-main">
       <transition name="fade" mode="out-in" @beforeLeave="beforeLeave" @enter="enter" @afterEnter="afterEnter">
         <router-view :key="$route.fullPath"></router-view>
       </transition>
-      <div class="section">
-          <h2>Artystki Artyści</h2>
-          <div class="left artists">
-            <ul>
-              <li v-for="artist in artists" :key="artist.slug">
-                <router-link :to="{ name: 'artist', params: { slug: artist.slug }}">{{artist.name}}</router-link>
-              </li>
-            </ul>
-          </div>
-          <div class="right artists">
-              <h4>Kuratorka</h4>
-              <router-link :to="{ name: 'artist', params: { slug: 'katarzyna-oczkowska' }}">Katarzyna Oczkowska</router-link><br><br>
-              <h4>VR ARTIST/WSPÓŁPRACA KURATORSKA</h4>
-              <router-link :to="{ name: 'artist', params: { slug: 'karina-gorzkowska' }}">Karina K Gorzkowska</router-link><br>
-              <router-link :to="{ name: 'artist', params: { slug: 'maja-szerel' }}">Maja Szerel</router-link>
-          </div>
+    </div>
+    <div class="section">
+        <h2>Artystki Artyści</h2>
+        <div class="left artists">
+          <ul>
+            <li v-for="artist in artists" :key="artist.slug">
+              <router-link :to="{ name: 'artist', params: { slug: artist.slug }}">{{artist.name}}</router-link>
+            </li>
+          </ul>
+        </div>
+        <div class="right artists">
+            <h4>Kuratorka</h4>
+            <router-link :to="{ name: 'artist', params: { slug: 'katarzyna-oczkowska' }}">Katarzyna Oczkowska</router-link><br><br>
+            <h4>VR ARTIST/WSPÓŁPRACA KURATORSKA</h4>
+            <router-link :to="{ name: 'artist', params: { slug: 'karina-gorzkowska' }}">Karina K Gorzkowska</router-link><br>
+            <router-link :to="{ name: 'artist', params: { slug: 'maja-szerel' }}">Maja Szerel</router-link>
+        </div>
+    </div>
+    <div class="section">
+      <div class="facebook-link">
+        <a href="https://www.facebook.com/events/335462634505379/"><img class="facebook" src="./assets/facebook.png"></a>
       </div>
-      <div class="section">
-        <div class="facebook-link">
-          <a href="https://www.facebook.com/events/335462634505379/"><img class="facebook" src="./assets/facebook.png"></a>
-        </div>
-        <div class="hub-link">
-          <a href="http://hub.link/t7ZhGX6">hub.link/t7ZhGX6</a><br>
-          <img class="mozilla" src="./assets/mozilla-hubs.png">
-        </div>
+      <div class="hub-link">
+        <a href="http://hub.link/t7ZhGX6">hub.link/t7ZhGX6</a><br>
+        <img class="mozilla" src="./assets/mozilla-hubs.png">
       </div>
     </div>
     <div class="footer">
@@ -80,14 +81,21 @@ export default {
 <style>
 @font-face {
   font-family: "Lato";
-  src: url("assets/fonts/Lato-Regular.ttf") format("truetype");
+  src: url("assets/fonts/Lato-Bold.ttf");
+  font-weight: bold;
 }
 
 @font-face {
   font-family: "Lato";
-  src: url("assets/fonts/Lato-Bold.ttf") format("truetype");
-  font-weight: bold;
+  src: url("assets/fonts/Lato-LightItalic.ttf");
+  font-style: italic, oblique;
 }
+
+@font-face {
+  font-family: "Lato";
+  src: url("assets/fonts/Lato-Regular.ttf");
+}
+
 
 
 #app {
@@ -135,12 +143,6 @@ export default {
   color: black;
 }
 
-.wrapper {
-  text-align: justify;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 70px;
-}
 
 .footer {
   margin-top: 100px;
@@ -156,7 +158,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section {
-  margin-bottom: 60px;
+  text-align: justify;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 70px;
+}
+
+.section-main {
+  background-color: black;
+  color: white;
+}
+
+.section-main-inside {
+  padding: 0.5em;
+}
+
+.section-main h2 {
+  color: black;
+  background-color: #ff00ff;
 }
 
 .artists ul {
