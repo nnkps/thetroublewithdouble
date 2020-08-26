@@ -108,12 +108,25 @@ export default {
   display: block;
 }
 
+sup {
+    vertical-align: top; font-size: 0.6em;
+}
+
 .info {
   text-align: justify;
 }
 
 .smaller {
   font-size: 0.8em;
+}
+
+.annotation {
+  font-size: 0.8em;
+  text-align: left;
+}
+
+.annotation a {
+  color: #ff00ff;
 }
 
 .info .smaller {

@@ -27,4 +27,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+p {
+    line-height: 130%;
+}
 </style>
