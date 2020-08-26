@@ -1,12 +1,25 @@
 <template>
   <div id="app">
     <div class="header">
-      <nav class="navigation">
+      <div v-if="!isMobile" class="navigation">
         <router-link class="home" to="/"></router-link>
         <router-link to="/info">Info</router-link>
         <router-link v-for="exhibition in exhibitions" :key="exhibition.slug" :to="{name: 'exhibition', params: { slug: exhibition.slug }}">{{ exhibition.name }}</router-link>
         <router-link to="/bio">Bio</router-link>
-      </nav>
+      </div>
+      <div v-else class="navigation" v-bind:class="{'responsive': responsive }">
+        <a href="javascript:void(0);" class="hamburger" v-on:click="responsive = !responsive">&#9776;</a>
+        <div class="hamburger-menu">
+          <transition name="fade" mode="out-in" @beforeLeave="beforeLeave" @enter="enter" @afterEnter="afterEnter">
+            <div v-show="responsive">
+              <router-link to="/">Home</router-link>
+              <router-link to="/info">Info</router-link>
+              <router-link v-for="exhibition in exhibitions" :key="exhibition.slug" :to="{name: 'exhibition', params: { slug: exhibition.slug }}">{{ exhibition.name }}</router-link>
+              <router-link to="/bio">Bio</router-link>
+            </div>
+          </transition>
+        </div>
+      </div>
     </div>
     <div class="section-main">
       <transition name="fade" mode="out-in" @beforeLeave="beforeLeave" @enter="enter" @afterEnter="afterEnter">
@@ -31,19 +44,23 @@
         </div>
     </div>
     <div class="section">
-      <div class="facebook-link">
-        <a href="https://www.facebook.com/events/335462634505379/"><img class="facebook" src="./assets/facebook.png"></a>
+      <div class="hub-link facebook-link">
+        <img class="facebook" src="./assets/facebook.png"><br>
+        <a href="https://www.facebook.com/events/335462634505379/">fb.com/events/335462634505379</a>
       </div>
+    </div>
+    <div class="section">
       <div class="hub-link">
-        <a href="http://hub.link/t7ZhGX6">hub.link/t7ZhGX6</a><br>
-        <img class="mozilla" src="./assets/mozilla-hubs.png">
+        <img class="mozilla" src="./assets/mozilla-hubs.png"><br>
+        <a href="http://hub.link/t7ZhGX6">hub.link/t7ZhGX6</a>
       </div>
     </div>
     <div class="footer">
-      <p>Dofinansowano ze środków Narodowego Centrum Kultury w ramach Programu Kultura w sieci.</p>
+      <p class="smaller">Dofinansowano ze środków Narodowego Centrum Kultury w ramach Programu Kultura w sieci.</p>
     </div>
   </div>
 </template>
+
 
 <script>
 import artists from './components/json/artists.json'
@@ -55,7 +72,9 @@ export default {
     return {
 			artists,
       exhibitions,
-      prevHeight: 0
+      prevHeight: 0,
+      responsive: false,
+      isMobile: window.innerWidth < 800
     }
   },
   methods: {
@@ -74,7 +93,12 @@ export default {
     afterEnter(element) {
       element.style.height = 'auto';
     },
-  }
+  },
+  mounted() {
+    window.addEventListener('resize', () => {
+      this.isMobile = window.innerWidth < 800;
+  })
+}
 }
 </script>
 
@@ -96,8 +120,6 @@ export default {
   src: url("assets/fonts/Lato-Regular.ttf");
 }
 
-
-
 #app {
   background-color: #ff00ff;
   font-family: "Lato";
@@ -105,6 +127,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: black;
   display: block;
+}
+
+.info {
+  text-align: left;
+}
+
+.smaller {
+  font-size: 0.8em;
+}
+
+.info .smaller {
+  text-align: right;
 }
 
 .navigation {
@@ -129,12 +163,12 @@ export default {
   text-transform: uppercase;
 }
 
-.navigation a.router-link-active, .artists a.router-link-active {
+.navigation a.router-link-exact-active, .artists a.router-link-exact-active {
   color: #00ff01;
 }
 
 .navigation a.home {
-  width: 1.2em;
+  width: 1.5em;
   background-color: #00ff01;
 }
 
@@ -208,18 +242,15 @@ h1, h2, h3, h4, h5, h6 {
   width: 80px;
 }
 
-.facebook-link {
-  display: inline-block;
-}
-
 .hub-link {
-  vertical-align: top;
   font-weight: bold;
   color: black;
-  display: inline-block;
-  font-size: 70px;
-  float: right;
+  font-size: 3em;
   text-align: right;
+}
+
+.facebook-link {
+  font-size: 2em;
 }
 
 .hub-link a {
@@ -244,4 +275,56 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0
 }
 
+.navigation a.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .section {
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 70px;
+  }
+
+  .navigation {
+    display: block;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .navigation a {
+    border: 2px solid #ff00ff;
+    padding: 0.4em;
+    height: 1.3em;
+    vertical-align: middle;
+    display: block;
+    text-align: left;
+  }
+
+  .navigation a.hamburger {
+    float: right;
+    display: block;
+    width: 1.5em;
+    border-left: 4px solid #ff00ff;
+    text-align: center;
+  }
+
+  .navigation a.hamburger-menu {
+    float: left;
+  }
+
+  .navigation.responsive a.hamburger {
+    border-left: 4px solid #ff00ff;
+  }
+
+  .hub-link {
+    font-size: 1.5em;
+  }
+
+  .facebook-link {
+    font-size: 1.1em;
+  }
+
+}
 </style>

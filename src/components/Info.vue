@@ -2,18 +2,24 @@
     <div class="section-main-inside">
         <div class="section">
             <h2>Info</h2>
-            <p>
-                lorem ipsum dolor sit amet
-            </p>
+            <div class="info">
+                <p v-for="(paragraph, index) in info.paragraphs" :key="index" v-html="paragraph">
+                </p>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
+import info from './json/info.json'
+
+
 export default {
     name: 'info',
     data () {
-        return {}
+        return {
+            info
+        }
     }
 }
 
