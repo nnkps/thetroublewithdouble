@@ -31,6 +31,7 @@
         <div class="footer-text">
           <p class="smaller">Wykonanie strony: <a href="https://nnkps.github.io/">Anna Kupś (@nnkps)</a>, projekt UI: <a href="https://instagram.com/karinae_k_g">Karina Gorzkowska</a></p>
           <p class="smaller">Dofinansowano ze środków Narodowego Centrum Kultury w ramach Programu Kultura w sieci.</p>
+          <p class="smaller">We współpracy z Fundacja Grey House Galeria Szara Kamienica.</p>
         </div>
         <div class="footer-logos">
           <img class="logo1" src="./assets/greyhouse_logo.jpg">
@@ -165,7 +166,7 @@ export default {
 
 .footer-text {
   float: left;
-  width: 50%
+  width: 50%;
 }
 
 .footer-logos {
@@ -187,13 +188,13 @@ export default {
 }
 
 .footer a {
-  background-color: #00ff01;
-  color: black;
+  color: #00ff01;
+  background-color: black;
 }
 
 .footer a:hover {
-  color: #00ff01;
-  background-color: black;
+  background-color: #00ff01;
+  color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
