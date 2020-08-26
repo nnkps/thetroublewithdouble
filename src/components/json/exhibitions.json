@@ -5,18 +5,205 @@
             "Mówią, że jeśli spotkacie swojego sobowtóra, to musicie go zabić, zanim sobowtór zabije was. We dwójkę, ponoć, jest o jednego/jedną za dużo. Mówią też, że aby zająć scenę należy z niej zepchnąć inną/innego. Kłopot z doppelgängerami, sobowtórami, alter ego, hybrydycznymi tożsamościami, czy jak tylko chcecie je sobie nazywać, od zawsze polegał na tym, że trzeba było je unicestwić, albo przynajmniej zamknąć w jakimś getcie. Tyle, że teraz zrobiło się nas całkiem sporo, bo każdy i każda jest wieloma. A wielość w zamknięciu bywa niebezpieczna. Spróbujemy jednak w tym getcie, w którym przyszło nam być, nie napierdalać się sami ze sobą jak bohater \"Fight Clubu\". Na scenie jest miejsce dla wszystkich naszych lustrzanych odbić, nawet jeśli niektóre lustra bywają trochę popękane czy nawet całkiem potłuczone. Spójrzcie z ukosa, a ujrzycie kształty.",
             "„Och, Kiciu, żeby się tak przedostać do Lustrzanego Domu! (…) Udawajmy, Kiciu, że można się tam jakoś przedostać. Udawajmy, że szkło robi się wiotkie, jak muślin, tak że można się przedostać. Co to? ależ ono, słowo daję, naprawdę zmienia się w taki rodzaj mgiełki! Teraz łatwo się będzie przedostać”*. I tak jak Alicja przeszła na drugą stronę lustra, tak i my, słowo daję, też tam pójdziemy. Ale jak wszyscy dobrze wiemy, współczesnymi lustrami są ekrany, w których z perwersyjną przyjemnością będziemy się przeglądać, przechodząc to na jedną, to na drugą stronę. Realne, wirtualne − mylą nam się. Na pohybel wieszczowi, który spytany czy Narcyz szczęśliwych lat dozna, odpowiedział − „Jeżeli sam siebie nie pozna”**",
             "<i>* Lewis Carroll, \"Po drugiej stronie lustra i co tam Alicja znalazła\", tłum. R. Stiller, ilustracje F. Themerson, przedm. J. Reichardt, Warszawa 2015.<br>** Owidiusz, \"Metamorfozy\", tłum. A. Kamieńska, Wrocław 1996.</i>"
-        ]
+        ],
+        "fb": {
+            "link": "https://www.facebook.com/events/595345451333353/",
+            "display": "fb.com/events/595345451333353"
+        },
+        "hublink": {
+            "link": "hub.link/t7ZhGX6"
+        },
+        "artists": [{
+                "name": "ArTVstka",
+                "slug": "artvstka"
+            },
+            {
+                "name": "Nikodem Baiser",
+                "slug": "nikodem-baiser"
+            },
+            {
+                "name": "Martyna Borowiecka-Mikuszewska",
+                "slug": "martyna-borowiecka"
+            },
+            {
+                "name": "Bella Ćwir",
+                "slug": "bella-cwir"
+            },
+            {
+                "name": "Justyna Górowska",
+                "slug": "justyna-gorowska"
+            },
+            {
+                "name": "Krzysztof Grzybacz",
+                "slug": "krzysztof-grzybacz"
+            },
+            {
+                "name": "Zofia Krawiec",
+                "slug": "zofia-krawiec"
+            },
+            {
+                "name": "Edmund Krempiński",
+                "slug": "edmund-krempinski"
+            },
+            {
+                "name": "Katarzyna Olma",
+                "slug": "katarzyna-olma"
+            },
+            {
+                "name": "Wojtek Ratajczak",
+                "slug": "wojtek-ratajczak"
+            },
+            {
+                "name": "serotoninærror",
+                "slug": "serotoninaerror"
+            },
+            {
+                "name": "Karina Gorzkowska",
+                "slug": "karina-gorzkowska"
+            },
+            {
+                "name": "Maja Szerel",
+                "slug": "maja-szerel"
+            },
+            {
+                "name": "Joanna Tochman",
+                "slug": "joanna-tochman"
+            },
+            {
+                "name": "Konrad Żukowski",
+                "slug": "konrad-zukowski"
+            }
+        ],
+        "curators": [{
+            "name": "Katarzyna Olma",
+            "slug": "katarzyna-olma"
+        }]
     },
     {
         "slug": "terror",
         "name": "(T)error",
         "paragraphs": [
             "(T)error to pochwała przemijalności<br>Z realu powstałaś i w real się obrócisz<br>Realność nad realnościami<br>Wszystko realność<br>Realności subkultura<br>Bardziej na dole<br>Choć wcześniej była góra<br>Ostatni seans streamowy<br>Nostalgia sieci, awangarda i glitch<br>Awatary w realu<br>Call me later, bitch<br>Face maski na twarzach<br>Bitcoiny w kieszeniach<br>A teraz zrobimy jakąś demolkę<br>Demontaż czy tam dekonstrukcję<br>Realność dla wszystkich<br>Wszyscy dla realności<br>Idziemy na climax, ciągniemy na finisz<br>Wokół płonie algorytm<br>Kiedy to w końcu rozkminisz<br>Wychodzimy z wirtualu<br>Wewnętrznie zhakowani<br>Gotowe na (T)error<br>Infekujemy sekwencje realu"
-        ]
+        ],
+        "fb": {
+            "link": "https://www.facebook.com/events/335462634505379/",
+            "display": "fb.com/events/335462634505379"
+        },
+        "hublink": {
+            "link": "link soon..."
+        },
+        "artists": [{
+                "name": "ArTVstka",
+                "slug": "artvstka"
+            },
+            {
+                "name": "Nikodem Baiser",
+                "slug": "nikodem-baiser"
+            },
+            {
+                "name": "Martyna Borowiecka-Mikuszewska",
+                "slug": "martyna-borowiecka"
+            },
+            {
+                "name": "Bella Ćwir",
+                "slug": "bella-cwir"
+            },
+            {
+                "name": "Justyna Górowska",
+                "slug": "justyna-gorowska"
+            },
+            {
+                "name": "Krzysztof Grzybacz",
+                "slug": "krzysztof-grzybacz"
+            },
+            {
+                "name": "Zofia Krawiec",
+                "slug": "zofia-krawiec"
+            },
+            {
+                "name": "Edmund Krempiński",
+                "slug": "edmund-krempinski"
+            },
+            {
+                "name": "Katarzyna Olma",
+                "slug": "katarzyna-olma"
+            },
+            {
+                "name": "Wojtek Ratajczak",
+                "slug": "wojtek-ratajczak"
+            },
+            {
+                "name": "serotoninærror",
+                "slug": "serotoninaerror"
+            },
+            {
+                "name": "Karina Gorzkowska",
+                "slug": "karina-gorzkowska"
+            },
+            {
+                "name": "Maja Szerel",
+                "slug": "maja-szerel"
+            },
+            {
+                "name": "Joanna Tochman",
+                "slug": "joanna-tochman"
+            },
+            {
+                "name": "Konrad Żukowski",
+                "slug": "konrad-zukowski"
+            },
+            {
+                "name": "virtual geisha",
+                "slug": "virtual-geisha"
+            }
+        ],
+        "curators": [{
+            "name": "Katarzyna Oczkowska",
+            "slug": "katarzyna-oczkowska"
+        }],
+        "event": {
+            "lineup": [{
+                    "name": "Aleksander Sovtysik",
+                    "slug": "aleksander-sovtysik"
+                },
+                {
+                    "name": "Carollė",
+                    "slug": "carolle"
+                },
+                {
+                    "name": "ehh hahah",
+                    "slug": "ehh-hahah"
+                },
+                {
+                    "name": "ixc999x (Jana Moroz)",
+                    "slug": "ixc999x"
+                },
+                {
+                    "name": "virtual geisha",
+                    "slug": "virtual-geisha"
+                }
+            ],
+            "site": [{
+                    "name": "ArTVstka",
+                    "slug": "artvstka",
+                    "room": "rest room"
+                },
+                {
+                    "name": "Katarzyna Olma",
+                    "slug": "katarzyna-olma",
+                    "room": "chill room"
+                },
+                {
+                    "name": "TERЯORMODE",
+                    "slug": "terrormode",
+                    "room": "main room"
+                }
+            ]
+        }
     },
     {
-        "slug": "crush",
-        "name": "Crush?",
+        "slug": "doublecrush",
+        "name": "Double Crush",
         "paragraphs": [
             "coming soon"
         ]

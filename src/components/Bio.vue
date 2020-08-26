@@ -1,9 +1,9 @@
 <template>
-    <div>
+    <div class="info-section">
     <div class="section-main-inside odd" v-bind:class="{'even': index % 2 === 0 }" v-for="(artist, index) in artists" :key="index">
         <div class="section">
-            <h2>{{ artist.name }}</h2>
-            <p>
+            <h2 :id="artist.slug">{{ artist.name }}</h2>
+            <p class="info">
                 {{ artist.description }}
             </p>
         </div>

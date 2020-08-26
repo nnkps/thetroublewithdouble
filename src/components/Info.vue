@@ -1,5 +1,5 @@
 <template>
-    <div class="section-main-inside">
+    <div class="section-main-inside info-section">
         <div class="section">
             <h2>Info</h2>
             <div class="info">

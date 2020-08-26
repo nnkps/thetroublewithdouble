@@ -15,7 +15,7 @@
     },
     {
         "name": "Bella Layla Ćwir",
-        "slug": "bella-layla-cwir",
+        "slug": "bella-cwir",
         "description": "piosenkarka i producentka muzyczna, mega utalentowana. W wieku siedemnastu lat zagrała pierwszą rolę w niskobudżetowym filmie. Rok później rozpoczęła karierę muzyczną, nagrywając swoje kawałki za pomocą dyktafonu i na kradzionych bitach, wrzucając je następnie na platformę YouTube, gdzie szybko zaczęła zdobywając popularność. Przez różnorodność wpływów nadaje się i do tańca i do różańca."
     },
     {
@@ -72,5 +72,40 @@
         "name": "Konrad Żukowski",
         "slug": "konrad-zukowski",
         "description": "działa w obszarze malarstwa, instalacji i wideo. Ukończył Akademię Sztuk Pięknych w Krakowie w pracowni Andrzeja Bednarczyka. Studiował na University of Applied Arts w Wiedniu. Głównym motywem jego prac są ludzkie ciała oraz tematy zaczerpnięte z popkultury. Uczestnik wystaw zbiorowych oraz indywidualnych, między innymi: w galerii Jak zapomnieć w Krakowie, Serce Człowieka w Warszawie, Galerii Szara Kamienica w Krakowie, Muzeum Sztuki Nowoczesnej w Warszawie, Rondzie Sztuki w Katowicach, BWA Warszawa, BWA Bielsko-Biała, CSW Łaźnia w Gdańsku. "
+    },
+    {
+        "name": "Wojtek Ratajczak",
+        "slug": "wojtek-ratajczak",
+        "description": ""
+    },
+    {
+        "name": "serotoninærror",
+        "slug": "serotoninaerror",
+        "description": ""
+    },
+    {
+        "name": "virtual geisha",
+        "slug": "virtual-geisha",
+        "description": ""
+    },
+    {
+        "name": "Aleksander Sovtysik",
+        "slug": "aleksander-sovtysik",
+        "description": ""
+    },
+    {
+        "name": "ehh hahah",
+        "slug": "ehh-hahah",
+        "description": ""
+    },
+    {
+        "name": "ixc999x (Jana Moroz)",
+        "slug": "ixc999x",
+        "description": ""
+    },
+    {
+        "name": "TERЯORMODE",
+        "slug": "terrormode",
+        "description": ""
     }
 ]

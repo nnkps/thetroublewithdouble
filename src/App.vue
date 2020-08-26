@@ -26,51 +26,29 @@
         <router-view :key="$route.fullPath"></router-view>
       </transition>
     </div>
-    <div class="section">
-        <h2>Artystki Artyści</h2>
-        <div class="left artists">
-          <ul>
-            <li v-for="artist in artists" :key="artist.slug">
-              <router-link :to="{ name: 'artist', params: { slug: artist.slug }}">{{artist.name}}</router-link>
-            </li>
-          </ul>
-        </div>
-        <div class="right artists">
-            <h4>Kuratorka</h4>
-            <router-link :to="{ name: 'artist', params: { slug: 'katarzyna-oczkowska' }}">Katarzyna Oczkowska</router-link><br><br>
-            <h4>VR ARTIST/WSPÓŁPRACA KURATORSKA</h4>
-            <router-link :to="{ name: 'artist', params: { slug: 'karina-gorzkowska' }}">Karina K Gorzkowska</router-link><br>
-            <router-link :to="{ name: 'artist', params: { slug: 'maja-szerel' }}">Maja Szerel</router-link>
-        </div>
-    </div>
-    <div class="section">
-      <div class="hub-link facebook-link">
-        <img class="facebook" src="./assets/facebook.png"><br>
-        <a href="https://www.facebook.com/events/335462634505379/">fb.com/events/335462634505379</a>
-      </div>
-    </div>
-    <div class="section">
-      <div class="hub-link">
-        <img class="mozilla" src="./assets/mozilla-hubs.png"><br>
-        <a href="http://hub.link/t7ZhGX6">hub.link/t7ZhGX6</a>
-      </div>
-    </div>
     <div class="footer">
-      <p class="smaller">Dofinansowano ze środków Narodowego Centrum Kultury w ramach Programu Kultura w sieci.</p>
+      <div class="footer-inside">
+        <div class="footer-text">
+          <p class="smaller">Wykonanie strony: <a href="https://nnkps.github.io/">Anna Kupś (@nnkps)</a>, projekt UI: <a href="https://instagram.com/karinae_k_g">Karina Gorzkowska</a></p>
+          <p class="smaller">Dofinansowano ze środków Narodowego Centrum Kultury w ramach Programu Kultura w sieci.</p>
+        </div>
+        <div class="footer-logos">
+          <img class="logo1" src="./assets/greyhouse_logo.jpg">
+          <img class="logo1" src="./assets/kulturawsieci-neg.jpg">
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 
 <script>
-import artists from './components/json/artists.json'
 import exhibitions from './components/json/exhibitions.json'
 
 export default {
   name: 'App',
   data () {
     return {
-			artists,
       exhibitions,
       prevHeight: 0,
       responsive: false,
@@ -130,7 +108,7 @@ export default {
 }
 
 .info {
-  text-align: left;
+  text-align: justify;
 }
 
 .smaller {
@@ -179,10 +157,43 @@ export default {
 
 
 .footer {
-  margin-top: 100px;
   background-color: black;
   color: white;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footer-text {
+  float: left;
+  width: 50%
+}
+
+.footer-logos {
+  text-align: right;
+  overflow: hidden;
+}
+
+.logo1 {
+  height: 60px;
+  padding: 1px;
+}
+
+.footer-inside {
   padding: 70px 5% 10px;
+}
+
+.creators {
+  text-align: right;
+}
+
+.footer a {
+  background-color: #00ff01;
+  color: black;
+}
+
+.footer a:hover {
+  color: #00ff01;
+  background-color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -207,27 +218,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0.5em;
 }
 
+.info-section {
+    margin-bottom: 30px;
+}
+
 .section-main h2 {
   color: black;
   background-color: #ff00ff;
 }
 
-.artists ul {
-  list-style-type: none;
-  padding: 0;
-}
-.artists li {
-  //display: inline-block;
-  margin: 0 10px;
-}
-.artists a {
-  color: black;
-  text-decoration: none;
-}
-
-.artists a:hover {
-  cursor: cell;
-}
 
 .left {
   display: inline-block;
@@ -255,6 +254,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hub-link a {
   background-color: #00ff01;
+  color: black;
 }
 
 .mozilla {
@@ -324,6 +324,23 @@ h1, h2, h3, h4, h5, h6 {
 
   .facebook-link {
     font-size: 1.1em;
+  }
+
+  .info {
+    text-align: left;
+  }
+
+  .left {
+    width: 100%
+  }
+
+  .footer-text {
+    width: 100%;
+    float: none;
+  }
+
+  .footer-logos {
+    text-align: center;
   }
 
 }
