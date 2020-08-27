@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-if="!this.$parent.isMobile">
-            <video width="100%" autoplay loop playsinline>
+            <video width="100%" autoplay loop muted>
                 <source src="../assets/videos/home/desktop.webm"
                         type="video/webm">
                 <source src="../assets/videos/home/desktop.mp4"
@@ -10,7 +10,7 @@
             </video>
         </div>
         <div v-else>
-            <video width="100%" autoplay loop playsinline>
+            <video width="100%" autoplay loop muted>
                 <source src="../assets/videos/home/mobile.webm"
                         type="video/webm">
                 <source src="../assets/videos/home/mobile.mp4"
