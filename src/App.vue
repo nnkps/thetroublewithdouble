@@ -179,7 +179,7 @@ sup {
 
 .footer-text {
   float: left;
-  width: 50%;
+  width: 60%;
 }
 
 .footer-logos {
@@ -193,7 +193,7 @@ sup {
 }
 
 .footer-inside {
-  padding: 70px 5% 10px;
+  padding: 40px 5% 10px;
 }
 
 .creators {

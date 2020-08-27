@@ -11,7 +11,8 @@
             "display": "fb.com/events/595345451333353"
         },
         "hublink": {
-            "link": "hub.link/t7ZhGX6"
+            "link": "hub.link/t7ZhGX6",
+            "animation": true
         },
         "artists": [{
                 "name": "ArTVstka",
@@ -22,7 +23,7 @@
                 "slug": "nikodem-baiser"
             },
             {
-                "name": "Martyna Borowiecka-Mikuszewska",
+                "name": "Martyna Borowiecka",
                 "slug": "martyna-borowiecka"
             },
             {
@@ -52,10 +53,6 @@
             {
                 "name": "Wojtek Ratajczak",
                 "slug": "wojtek-ratajczak"
-            },
-            {
-                "name": "serotoninærror",
-                "slug": "serotoninaerror"
             },
             {
                 "name": "Karina Gorzkowska",
@@ -75,8 +72,8 @@
             }
         ],
         "curators": [{
-            "name": "Katarzyna Olma",
-            "slug": "katarzyna-olma"
+            "name": "Katarzyna Oczkowska",
+            "slug": "katarzyna-oczkowska"
         }]
     },
     {
@@ -90,7 +87,8 @@
             "display": "fb.com/events/335462634505379"
         },
         "hublink": {
-            "link": "link soon..."
+            "link": "link soon...",
+            "animation": false
         },
         "artists": [{
                 "name": "ArTVstka",
@@ -101,7 +99,7 @@
                 "slug": "nikodem-baiser"
             },
             {
-                "name": "Martyna Borowiecka-Mikuszewska",
+                "name": "Martyna Borowiecka",
                 "slug": "martyna-borowiecka"
             },
             {
@@ -133,10 +131,6 @@
                 "slug": "wojtek-ratajczak"
             },
             {
-                "name": "serotoninærror",
-                "slug": "serotoninaerror"
-            },
-            {
                 "name": "Karina Gorzkowska",
                 "slug": "karina-gorzkowska"
             },
@@ -151,10 +145,6 @@
             {
                 "name": "Konrad Żukowski",
                 "slug": "konrad-zukowski"
-            },
-            {
-                "name": "virtual geisha",
-                "slug": "virtual-geisha"
             }
         ],
         "curators": [{
@@ -181,22 +171,28 @@
                 {
                     "name": "virtual geisha",
                     "slug": "virtual-geisha"
+                },
+                {
+                    "name": "Martyna Borowiecka",
+                    "slug": "martyna-borowiecka"
                 }
             ],
             "site": [{
                     "name": "ArTVstka",
                     "slug": "artvstka",
-                    "room": "rest room"
+                    "room": "(rest room)"
                 },
                 {
                     "name": "Katarzyna Olma",
                     "slug": "katarzyna-olma",
-                    "room": "chill room"
+                    "name2": "Joanna Tochman",
+                    "slug2": "joanna-tochman",
+                    "room": "(chill room)"
                 },
                 {
                     "name": "TERЯORMODE",
                     "slug": "terrormode",
-                    "room": "main room"
+                    "room": "(main room)"
                 }
             ]
         }
@@ -204,8 +200,13 @@
     {
         "slug": "doublecrush",
         "name": "Double Crush",
+        "header": "Exhibition",
         "paragraphs": [
             "coming soon"
-        ]
+        ],
+        "hublink": {
+            "link": "",
+            "animation": false
+        }
     }
 ]
