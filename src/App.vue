@@ -293,7 +293,17 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+.terrormode a {
+    color: #ff00ff;
+}
+
 @media screen and (max-width: 800px) {
+  .terrormode a {
+    font-size: 0.5em;
+  }
+  .terrormode {
+    text-align: justify;
+  }
   .section {
     text-align: justify;
     margin-left: 5%;
