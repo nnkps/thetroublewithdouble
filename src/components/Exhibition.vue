@@ -1,14 +1,14 @@
 <template>
     <div>
         <div v-if="!this.$parent.isMobile">
-            <video width="100%" autoplay loop muted v-show="currentExhibition.slug == 'thetroublewithdouble'">
+            <video width="100%" autoplay loop muted playsinline v-show="currentExhibition.slug == 'thetroublewithdouble'" poster="../assets/videos/ttwd/poster.jpg">
                 <source src="../assets/videos/ttwd/desktop.webm"
                         type="video/webm">
                 <source src="../assets/videos/ttwd/desktop.mp4"
                         type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video>
-            <video width="100%" autoplay loop muted v-show="currentExhibition.slug == 'terror'">
+            <video width="100%" autoplay loop muted playsinline v-show="currentExhibition.slug == 'terror'" poster="../assets/videos/terror/poster.jpg">
                 <source src="../assets/videos/terror/desktop.webm"
                         type="video/webm">
                 <source src="../assets/videos/terror/desktop.mp4"
@@ -17,14 +17,14 @@
             </video>
         </div>
         <div v-else>
-            <video width="100%" autoplay loop muted v-show="currentExhibition.slug == 'thetroublewithdouble'">
+            <video width="100%" autoplay loop muted playsinline v-show="currentExhibition.slug == 'thetroublewithdouble'" poster="../assets/videos/ttwd/poster.jpg">
                 <source src="../assets/videos/ttwd/mobile.webm"
                         type="video/webm">
                 <source src="../assets/videos/ttwd/mobile.mp4"
                         type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video>
-            <video width="100%" autoplay loop muted v-show="currentExhibition.slug == 'terror'">
+            <video width="100%" autoplay loop muted playsinline v-show="currentExhibition.slug == 'terror'" poster="../assets/videos/terror/poster.jpg">
                 <source src="../assets/videos/terror/mobile.webm"
                         type="video/webm">
                 <source src="../assets/videos/terror/mobile.mp4"
@@ -116,14 +116,14 @@
         </div>
         <div class="hub" v-if="currentExhibition.hublink.animation">
             <div v-if="!this.$parent.isMobile">
-                <video width="100%" autoplay loop muted v-show="currentExhibition.slug == 'thetroublewithdouble'">
+                <video width="100%" autoplay loop muted playsinline v-show="currentExhibition.slug == 'thetroublewithdouble'" poster="../assets/videos/ttwdhubs/poster.jpg">
                     <source src="../assets/videos/ttwdhubs/desktop.webm"
                             type="video/webm">
                     <source src="../assets/videos/ttwdhubs/desktop.mp4"
                             type="video/mp4">
                     Sorry, your browser doesn't support embedded videos.
                 </video>
-                <video width="100%" autoplay loop muted v-show="currentExhibition.slug == 'terror'">
+                <video width="100%" autoplay loop muted playsinline v-show="currentExhibition.slug == 'terror'" poster="../assets/videos/ttwdhubs/poster.jpg">
                     <source src="../assets/videos/ttwdhubs/desktop.webm"
                             type="video/webm">
                     <source src="../assets/videos/ttwdhubs/desktop.mp4"
@@ -132,14 +132,14 @@
                 </video>
             </div>
             <div v-else>
-                <video width="100%" autoplay loop muted v-show="currentExhibition.slug == 'thetroublewithdouble'">
+                <video width="100%" autoplay loop muted playsinline v-show="currentExhibition.slug == 'thetroublewithdouble'" poster="../assets/videos/ttwdhubs/poster.jpg">
                     <source src="../assets/videos/ttwdhubs/mobile.webm"
                             type="video/webm">
                     <source src="../assets/videos/ttwdhubs/mobile.mp4"
                             type="video/mp4">
                     Sorry, your browser doesn't support embedded videos.
                 </video>
-                <video width="100%" autoplay loop muted v-show="currentExhibition.slug == 'terror'">
+                <video width="100%" autoplay loop muted playsinline v-show="currentExhibition.slug == 'terror'" poster="../assets/videos/ttwdhubs/poster.jpg">
                     <source src="../assets/videos/ttwdhubs/mobile.webm"
                             type="video/webm">
                     <source src="../assets/videos/ttwdhubs/mobile.mp4"
