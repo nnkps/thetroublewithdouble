@@ -123,11 +123,9 @@
                             type="video/mp4">
                     Sorry, your browser doesn't support embedded videos.
                 </video>
-                <video width="100%" autoplay loop muted playsinline v-show="currentExhibition.slug == 'terror'" poster="../assets/videos/ttwdhubs/poster.jpg">
-                    <source src="../assets/videos/ttwdhubs/desktop.webm"
+                <video width="100%" autoplay loop muted playsinline v-show="currentExhibition.slug == 'terror'" poster="../assets/videos/terrorhubs/poster.jpg">
+                    <source src="../assets/videos/terrorhubs/desktop.webm"
                             type="video/webm">
-                    <source src="../assets/videos/ttwdhubs/desktop.mp4"
-                            type="video/mp4">
                     Sorry, your browser doesn't support embedded videos.
                 </video>
             </div>
@@ -139,11 +137,9 @@
                             type="video/mp4">
                     Sorry, your browser doesn't support embedded videos.
                 </video>
-                <video width="100%" autoplay loop muted playsinline v-show="currentExhibition.slug == 'terror'" poster="../assets/videos/ttwdhubs/poster.jpg">
-                    <source src="../assets/videos/ttwdhubs/mobile.webm"
+                <video width="100%" autoplay loop muted playsinline v-show="currentExhibition.slug == 'terror'" poster="../assets/videos/terrorhubs/poster.jpg">
+                    <source src="../assets/videos/terrorhubs/mobile.webm"
                             type="video/webm">
-                    <source src="../assets/videos/ttwdhubs/mobile.mp4"
-                            type="video/mp4">
                     Sorry, your browser doesn't support embedded videos.
                 </video>
             </div>

@@ -88,7 +88,7 @@
         },
         "hublink": {
             "link": "hub.link/FjQwqA8",
-            "animation": false
+            "animation": true
         },
         "artists": [{
                 "name": "ArTVstka",
