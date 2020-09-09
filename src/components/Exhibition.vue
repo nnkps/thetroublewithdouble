@@ -36,7 +36,7 @@
             <div class="section">
                 <h2 v-if="currentExhibition.header">{{ currentExhibition.header }}</h2>
                 <h2 v-else>VR Exhibition <span v-if="currentExhibition.event"><span class="slash">/</span> Site specific</span></h2>
-                <div>
+                <div class="info">
                     <p v-for="(paragraph, index) in currentExhibition.paragraphs" :key="index" v-html="paragraph">
                     </p>
                 </div>
