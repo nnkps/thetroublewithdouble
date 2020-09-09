@@ -59,7 +59,8 @@
                         <router-link :to="{ name: 'artist', params: { slug: artist.slug }}">{{artist.name}}</router-link>
                         </li>
                     </ul>
-                    <h4>VR ARTIST <span class="slash">/</span> WSPÓŁPRACA KURATORSKA</h4>
+                    <h4 v-if="currentExhibition.slug != 'celebrity'">VR ARTIST <span class="slash">/</span> WSPÓŁPRACA KURATORSKA</h4>
+                    <h4 v-else>dizajn 3D <span class="slash">/</span> współpraca aranżacyjna</h4>
                     <ul>
                         <li>
                             <router-link :to="{ name: 'artist', params: { slug: 'karina-gorzkowska' }}">Karina Gorzkowska</router-link>
@@ -68,12 +69,14 @@
                             <router-link :to="{ name: 'artist', params: { slug: 'maja-szerel' }}">Maja Szerel</router-link>
                         </li>
                     </ul>
-                    <h4>Projekt animacji</h4>
-                    <ul>
-                        <li>
-                            <router-link :to="{ name: 'artist', params: { slug: 'karina-gorzkowska' }}">Karina Gorzkowska</router-link>
-                        </li>
-                    </ul>
+                    <div v-if="currentExhibition.slug != 'celebrity'">
+                        <h4>Projekt animacji</h4>
+                        <ul>
+                            <li>
+                                <router-link :to="{ name: 'artist', params: { slug: 'karina-gorzkowska' }}">Karina Gorzkowska</router-link>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 

@@ -153,10 +153,6 @@
         }],
         "event": {
             "lineup": [{
-                    "name": "Aleksander Sovtysik",
-                    "slug": "aleksander-sovtysik"
-                },
-                {
                     "name": "Carollė",
                     "slug": "carolle"
                 },
@@ -183,23 +179,74 @@
                     "slug": "katarzyna-olma",
                     "name2": "Joanna Tochman",
                     "slug2": "joanna-tochman",
-                    "room": "(chill room)"
+                    "room": "(main room)"
                 },
                 {
                     "name": "TERЯORMODE",
                     "slug": "terrormode",
-                    "room": "(main room)"
+                    "room": "(chill room)"
                 }
             ]
         }
     },
     {
-        "slug": "doublecrush",
-        "name": "Double Crush",
+        "slug": "celebrity",
+        "name": "Celebrity",
         "header": "Exhibition",
         "paragraphs": [
-            "coming soon"
+            "„Nie jestem ofiarą, jestem <i>celebrity</i>” − mówi Lulu, czyli jedna z najbardziej nieodgadnionych postaci literackich z dramatu Franka Wedekinda. <i>Lulu</i> powstaje mniej więcej w tym samym czasie, kiedy Freud pisze <i>Objaśnienie marzeń sennych</i>. I jedno, i drugie dzieło bada obszary społecznego tabu, i jedno, i drugie obfituje w mizoginizm. Z tym, że badania Freuda przynoszą mu sławę, a  dramat Wedekinda zostaje poddany cenzurze i owiany sławą, ale tą złą. Jednak w przypadku <i>Lulu</i> sprawa nie jest taka prosta, bo historia kilkuletniej dziewczynki wytresowanej do roli prostytutki jest również historią strategii wyparcia i hipokryzji mieszczaństwa doby dekadentyzmu. Lulu posiada wiele tożsamości, bo jest i niewinną dziewczynką, i <i>femme fatale</i>, i żoną, kochanką, fetyszem, ofiarą oraz opresorką. Lulu posiada również wiele imion − Nelly, Ewa, Mignon, Katja, Daisy. Jeden z bohaterów Wedekinda mówi, że Lulu wystawia się na bezwstydne spojrzenia, ale to właśnie ją ocala. Staje się ona lustrem dla projekcji męskich fantazji, a jednocześnie traumą, której za wszelką cenę należy uniknąć. I wreszcie Lulu to nadwyżka rozkoszy, zohydzająca to, co uważa się za przyjemne, jak i nasycająca przyjemnością to, co uznawane za odrażające. Obsceniczność <i>Lulu</i> Wedekind przypłacił karierą a oryginalny, nieocenzurowany tekst opublikowany został dopiero pod koniec lat 80. XX wieku, a więc siedemdziesiąt lat po śmierci autora. Jednak obsceniczność ma tutaj podwójne znaczenie, bo łacińskie <i>obscenus</i> oznacza nieprzyzwoitość, ale <i>ob scenus</i> można przetłumaczyć jako „dla sceny” i „przeciw scenie”. Lulu wchodzi na scenę po to, żeby ją zakwestionować. Prawdziwa <i>celebrity</i>.",
+            "Ale kim właściwie Lulu jest dzisiaj? Można ją odczytywać jako wciąż aktualny paradoks − figurę zniewoloną i zniewalającą, która wyzwala ze społecznych konwencji oraz mistyfikacji, poprzez nic innego jak mistyfikację właśnie. Współczesna Lulu ma wiele tożsamości i nie ma żadnej, posiada wiele płci, a jednocześnie nie ma płci, jest wszystkimi i jest nikim. Lulu to afektywne zanieczyszczenie ustalonego porządku, wtargnięcie nie dającego się oswoić symptomu. Lulu jest jak świadomie śniony sen, z którego jak najszybciej chcemy się wybudzić i uniknąć tego, co nas tak przeraża. Ale czy aby nie budzimy się po to, żeby śnić dalej? A gdyby tak doprowadzić marzenie senne do jego granic i zetknąć się grozą? Jeszcze okazałoby się, że tam gdzie załamuje się sen, tam gdzie wygląda nas trauma, tam jest to, co najbardziej realne w naszych pragnieniach. Znamy przecież słowa piosenki: „Sweet dreams are made of this / Who am I to disagree?”. W tym kolektywnie śnionym śnie każdy może być <i>celebrity</i>. I pamiętajmy, że nie chodzi o to, by naszą codzienną postawę przenieść do obszaru snu, ale odwrotnie − radykalne doświadczenie snu przełożyć na rzeczywistość poza nim. Sen może okazać się wtedy rewolucją. Oby tylko nie prześnioną.",
+            "<br><div class=\"annotation\">Wystawa w ramach Cracow Art Week Krakers 2020<br>Podziękowania dla Starego Teatru im. Heleny Modrzejewskiej w Krakowie</div>"
         ],
+        "artists": [{
+                "name": "ArTVstka",
+                "slug": "artvstka"
+            },
+            {
+                "name": "Nikodem Baiser",
+                "slug": "nikodem-baiser"
+            },
+            {
+                "name": "Martyna Borowiecka",
+                "slug": "martyna-borowiecka"
+            },
+            {
+                "name": "Justyna Górowska",
+                "slug": "justyna-gorowska"
+            },
+            {
+                "name": "Krzysztof Grzybacz",
+                "slug": "krzysztof-grzybacz"
+            },
+            {
+                "name": "Zofia Krawiec",
+                "slug": "zofia-krawiec"
+            },
+            {
+                "name": "Edmund Krempiński",
+                "slug": "edmund-krempinski"
+            },
+            {
+                "name": "Katarzyna Olma",
+                "slug": "katarzyna-olma"
+            },
+            {
+                "name": "Joanna Tochman",
+                "slug": "joanna-tochman"
+            },
+            {
+                "name": "Daniel_a Weiss",
+                "slug": "daniel-a-weiss"
+            },
+            {
+                "name": "Konrad Żukowski",
+                "slug": "konrad-zukowski"
+            }
+        ],
+        "curators": [{
+            "name": "Katarzyna Oczkowska",
+            "slug": "katarzyna-oczkowska"
+        }],
         "hublink": {
             "link": "",
             "animation": false
