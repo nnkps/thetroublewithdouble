@@ -15,6 +15,11 @@
                         type="video/mp4">
                 Sorry, your browser doesn't support embedded videos.
             </video>
+            <video width="100%" autoplay loop muted playsinline v-show="currentExhibition.slug == 'celebrity'" poster="../assets/videos/celebrity/poster.png">
+                <source src="../assets/videos/celebrity/desktop.webm"
+                        type="video/webm">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
         </div>
         <div v-else>
             <video width="100%" autoplay loop muted playsinline v-show="currentExhibition.slug == 'thetroublewithdouble'" poster="../assets/videos/ttwd/poster.jpg">
@@ -29,6 +34,11 @@
                         type="video/webm">
                 <source src="../assets/videos/terror/mobile.mp4"
                         type="video/mp4">
+                Sorry, your browser doesn't support embedded videos.
+            </video>
+            <video width="100%" autoplay loop muted playsinline v-show="currentExhibition.slug == 'celebrity'" poster="../assets/videos/celebrity/poster.png">
+                <source src="../assets/videos/celebrity/mobile.webm"
+                        type="video/webm">
                 Sorry, your browser doesn't support embedded videos.
             </video>
         </div>
@@ -69,11 +79,14 @@
                             <router-link :to="{ name: 'artist', params: { slug: 'maja-szerel' }}">Maja Szerel</router-link>
                         </li>
                     </ul>
-                    <div v-if="currentExhibition.slug != 'celebrity'">
+                    <div>
                         <h4>Projekt animacji</h4>
                         <ul>
-                            <li>
+                            <li v-if="currentExhibition.slug != 'celebrity'">
                                 <router-link :to="{ name: 'artist', params: { slug: 'karina-gorzkowska' }}">Karina Gorzkowska</router-link>
+                            </li>
+                            <li v-else>
+                                <router-link :to="{ name: 'artist', params: { slug: 'maja-szerel' }}">Maja Szerel</router-link>
                             </li>
                         </ul>
                     </div>
