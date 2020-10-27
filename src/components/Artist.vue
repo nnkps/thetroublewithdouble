@@ -2,8 +2,7 @@
     <div class="section-main-inside">
         <div class="section">
             <h2>{{ currentArtist.name }}</h2>
-            <div>
-                {{ currentArtist.description }}
+            <div v-html="currentArtist.description">
             </div>
         </div>
     </div>

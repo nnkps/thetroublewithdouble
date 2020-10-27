@@ -94,16 +94,16 @@
             </div>
 
             <div class="section" v-if="currentExhibition.event">
-                <h2>Secret party</h2>
+                <h2>{{ currentExhibition.event.name }}</h2>
                 <div class="left artists">
-                    <h4>Lineup</h4>
+                    <h4 v-if="currentExhibition.event.site">Lineup</h4>
                     <ul>
                         <li v-for="artist in currentExhibition.event.lineup" :key="artist.slug">
                         <router-link :to="{ name: 'artist', params: { slug: artist.slug }}">{{artist.name}}</router-link>
                         </li>
                     </ul>
                 </div>
-                <div class="right artists">
+                <div class="right artists" v-if="currentExhibition.event.site">
                     <h4>Site Specific</h4>
                     <ul>
                         <li v-for="artist in currentExhibition.event.site" :key="artist.slug">

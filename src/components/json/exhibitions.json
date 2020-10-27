@@ -152,6 +152,7 @@
             "slug": "katarzyna-oczkowska"
         }],
         "event": {
+            "name": "secret party",
             "lineup": [{
                     "name": "Carollė",
                     "slug": "carolle"
@@ -211,12 +212,20 @@
                 "slug": "martyna-borowiecka"
             },
             {
+                "name": "Karina Gorzkowska",
+                "slug": "karina-gorzkowska"
+            },
+            {
                 "name": "Justyna Górowska",
                 "slug": "justyna-gorowska"
             },
             {
                 "name": "Krzysztof Grzybacz",
                 "slug": "krzysztof-grzybacz"
+            },
+            {
+                "name": "ixc999x (Jana Moroz)",
+                "slug": "ixc999x"
             },
             {
                 "name": "Zofia Krawiec",
@@ -229,6 +238,10 @@
             {
                 "name": "Katarzyna Olma",
                 "slug": "katarzyna-olma"
+            },
+            {
+                "name": "Maja Szerel",
+                "slug": "maja-szerel"
             },
             {
                 "name": "Joanna Tochman",
@@ -250,6 +263,19 @@
         "hublink": {
             "link": "",
             "animation": false
+        },
+        "fb": {
+            "link": "https://www.facebook.com/events/240393404061924/",
+            "display": "fb.com/events/240393404061924"
+        },
+        "event": {
+            "name": "dj-set",
+            "lineup": [
+                {
+                    "name": "ixc999x (Jana Moroz)",
+                    "slug": "ixc999x"
+                }
+            ]
         }
     }
 ]
