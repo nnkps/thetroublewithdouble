@@ -113,20 +113,20 @@
                 </div>
                 <div class="hub-link facebook-link">
                     <img class="facebook" src="../assets/facebook.png"><br>
-                    <a :href="currentExhibition.fb.link">{{ currentExhibition.fb.display }}</a>
+                    <a :href="currentExhibition.fb.link" @click="handleOutboundLinkClicks">{{ currentExhibition.fb.display }}</a>
                 </div>
             </div>
 
             <div class="section" v-if="currentExhibition.fb && !currentExhibition.event">
                 <div class="hub-link facebook-link">
                     <img class="facebook" src="../assets/facebook.png"><br>
-                    <a :href="currentExhibition.fb.link">{{ currentExhibition.fb.display }}</a>
+                    <a :href="currentExhibition.fb.link" @click="handleOutboundLinkClicks">{{ currentExhibition.fb.display }}</a>
                 </div>
             </div>
             <div class="section" v-if="currentExhibition.hublink.link">
                 <div class="hub-link">
                     <img class="mozilla" src="../assets/mozilla-hubs.png"><br>
-                    <a :href="'http://' + currentExhibition.hublink.link">{{ currentExhibition.hublink.link }}</a>
+                    <a :href="'http://' + currentExhibition.hublink.link" @click="handleOutboundLinkClicks">{{ currentExhibition.hublink.link }}</a>
                 </div>
             </div>
         </div>
@@ -184,6 +184,16 @@ export default {
                 }
             }
             return this.exhibitions[0];
+        }
+    },
+    methods: {
+        handleOutboundLinkClicks: function(event) {
+            this.$ga.event({
+                eventCategory: 'Outbound Link',
+                eventAction: 'click',
+                eventLabel: event.target.href,
+                transport: 'beacon'
+            })
         }
     }
 }

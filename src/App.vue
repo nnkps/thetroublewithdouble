@@ -39,6 +39,35 @@
         </div>
       </div>
     </div>
+    <vue-cookie-accept-decline
+        :ref="'consentPanel'"
+        :elementId="'consentPanel'"
+        :debug="false"
+        :position="'bottom-left'"
+        :type="'floating'"
+        :disableDecline="false"
+        :transitionName="'slideFromBottom'"
+        :showPostponeButton="false"
+        @status="cookieStatus"
+        @clicked-accept="cookieClickedAccept"
+        @clicked-decline="cookieClickedDecline">
+
+        <div slot="postponeContent">
+            &times;
+        </div>
+
+        <div slot="message">
+            Wykorzystujemy pliki cookie do analizowania ruchu na naszej witrynie. Informacje o tym, jak korzystasz z naszej witryny, udostępniamy partnerom analitycznym - Google Analytics. Partnerzy mogą połączyć te informacje z innymi danymi otrzymanymi od Ciebie lub uzyskanymi podczas korzystania z ich usług. <a href="https://www.google.com/intl/pl/policies/privacy/partners/" target="_blank">Przeczytaj więcej</a>.
+        </div>
+
+        <div slot="declineContent">
+          Rezygnuję
+        </div>
+
+        <div slot="acceptContent">
+          Akceptuję!
+        </div>
+    </vue-cookie-accept-decline>
   </div>
 </template>
 
@@ -72,6 +101,19 @@ export default {
     afterEnter(element) {
       element.style.height = 'auto';
     },
+    cookieStatus(status) {
+      if(status == "accept") {
+        this.cookieClickedAccept()
+      } else if(status == "decline") {
+        this.cookieClickedDecline()
+      }
+    },
+    cookieClickedAccept() {
+      this.$ga.enable();
+    },
+    cookieClickedDecline() {
+      this.$ga.disable();
+    }
   },
   mounted() {
     window.addEventListener('resize', () => {
@@ -82,6 +124,7 @@ export default {
 </script>
 
 <style>
+
 @font-face {
   font-family: "Lato";
   src: url("assets/fonts/Lato-Bold.ttf");
@@ -109,7 +152,7 @@ export default {
 }
 
 sup {
-    vertical-align: top; font-size: 0.6em;
+  vertical-align: top; font-size: 0.6em;
 }
 
 .info {
@@ -299,6 +342,27 @@ h1, h2, h3, h4, h5, h6 {
 
 .terrormode a {
     color: black;
+}
+
+#consentPanel {
+  background: #00ff01;
+  border: 0;
+}
+
+#consentPanel a {
+  color: #ff00ff;
+}
+
+div.cookie__floating {
+  font-family: "Lato";
+}
+
+div.cookie__floating__content {
+  font-size: 0.8em;
+}
+
+button.cookie__floating__buttons__button {
+  font-size: 0.85em;
 }
 
 @media screen and (max-width: 800px) {

@@ -2,12 +2,17 @@ import Vue from 'vue'
 import App from './App.vue'
 // import VideoBackground from 'vue-responsive-video-background-player'
 import VueRouter from 'vue-router'
+import VueAnalytics from 'vue-analytics';
 
 import Home from './components/Home.vue'
 import Artist from './components/Artist.vue'
 import Exhibition from './components/Exhibition.vue'
 import Bio from './components/Bio.vue'
 import Info from './components/Info.vue'
+import 'vue-cookie-accept-decline/dist/vue-cookie-accept-decline.css'
+import VueCookieAcceptDecline from 'vue-cookie-accept-decline'
+
+Vue.component('vue-cookie-accept-decline', VueCookieAcceptDecline)
 
 
 Vue.use(VueRouter)
@@ -24,9 +29,18 @@ const router = new VueRouter({
     routes
 })
 
+
+Vue.use(VueAnalytics, {
+    id: 'UA-97060633-2',
+    disabled: true,
+    router,
+    set: [
+        { field: 'anonymizeIp', value: true }
+    ]
+})
+
 Vue.config.productionTip = false
 
-// Vue.component('video-background', VideoBackground);
 
 new Vue({
     router,
