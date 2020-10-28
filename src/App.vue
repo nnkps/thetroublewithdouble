@@ -102,6 +102,8 @@ export default {
       element.style.height = 'auto';
     },
     cookieStatus(status) {
+      console.log(status);
+      this.status = status;
       if(status == "accept") {
         this.cookieClickedAccept()
       } else if(status == "decline") {
@@ -109,9 +111,11 @@ export default {
       }
     },
     cookieClickedAccept() {
+      this.status = 'accept';
       this.$ga.enable();
     },
     cookieClickedDecline() {
+      this.status = 'decline';
       this.$ga.disable();
     }
   },
